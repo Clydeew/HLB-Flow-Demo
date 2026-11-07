@@ -1,0 +1,8 @@
+{
+  "rows": 10000,
+  "columns": 26,
+  "all_values_match": true,
+  "csv_sha256": "0d8ec877422b58e9dd220d215f412e91a7ae510e37be2e16269d59280820698e",
+  "original_workbook_sha256": "310482e0783f5d2ee04d44a324fd5d3c80969c0732de696faf2fdd9a769a1c31",
+  "note": "Colab CSV values independently compared against every original workbook value; source definitions remain the authoritative XLSX."
+}

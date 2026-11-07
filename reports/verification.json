@@ -1,0 +1,37 @@
+{
+  "backend_tests": {
+    "passed": 41,
+    "command": ".venv/bin/python -m pytest -q"
+  },
+  "extension_checks": {
+    "result": "passed",
+    "command": "node tests/extension.test.mjs",
+    "native_installation": "Not available in connected browser; manual Load unpacked step required"
+  },
+  "linux_setup": {
+    "result": "executed; server healthy",
+    "model_unchanged": true
+  },
+  "windows_setup": {
+    "result": "script provided; not executed on Windows"
+  },
+  "macos_setup": {
+    "result": "shell syntax checked; not executed on macOS"
+  },
+  "browser_checks": [
+    "Storefront sign-in and order creation",
+    "Consent recorded before data evaluation",
+    "Live Colab-trained model approval",
+    "Offer acceptance and synthetic challenge",
+    "Simulated capture, one loan, merchant confirmation",
+    "Bank dashboard model explanation and affordability",
+    "HLB brand palette and reduced slash usage"
+  ],
+  "training": "Google Colab; reports/model_report.json",
+  "limitations": [
+    "Synthetic demo only",
+    "No actual bank, CIC, identity, SMS or payment service",
+    "No actual default-risk validation",
+    "Presentation video recording remains a user rehearsal task"
+  ]
+}

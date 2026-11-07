@@ -1,0 +1,52 @@
+{
+  "source_sha256": "07b58b578b6a0992c6098d609c75832df40d192bcf6610f605ee0f387846f601",
+  "rows": 10000,
+  "fields": 26,
+  "unique_applications": 10000,
+  "positive_labels": 436,
+  "unobservable": 1943,
+  "unsupported_tenure": 342,
+  "positive_labels_among_manual_approvals": 0,
+  "positive_labels_among_supplied_stp_approvals": 0,
+  "definitions": {
+    "applicant_id": "Unique application identifier",
+    "application_date": "Application date",
+    "customer_profile": "Customer segment",
+    "has_formal_cic_history": "Formal CIC history flag",
+    "has_observable_tx": "Pre-application transaction visibility",
+    "monthly_inflow_vnd": "Average monthly cash inflow in VND",
+    "inflow_cv": "Monthly inflow coefficient of variation",
+    "unified_credit_score": "Standardised credit rating, excluded from primary model",
+    "casa_balance_vnd": "Average 90-day CASA balance",
+    "dti_ratio": "Monthly estimated debt obligations divided by inflow",
+    "on_time_bill_ratio": "Ratio of bills paid on time",
+    "e_wallet_topups_pm": "Average monthly wallet top-up count",
+    "regular_weekly_pattern": "Regular weekly transaction pattern flag",
+    "rapid_drain_flag": "Rapid account depletion flag",
+    "requested_loan_vnd": "Requested financing principal",
+    "approved_loan_vnd": "Approved principal; outcome only",
+    "loan_tenure_months": "Requested tenure in months",
+    "interest_rate_pct": "Assigned nominal annual rate; excluded predictor",
+    "is_default_90d": "90 or more days past due during loan tenure; target only",
+    "manual_approval_status": "Supplied manual decision; excluded",
+    "manual_decision_days": "Supplied manual turnaround benchmark",
+    "manual_review_cost_vnd": "Supplied manual cost benchmark",
+    "is_abandoned": "Onboarding abandonment outcome; excluded",
+    "stp_approval_status": "Supplied STP decision; excluded",
+    "stp_decision_minutes": "Supplied STP turnaround benchmark",
+    "stp_review_cost_vnd": "Supplied STP cost benchmark"
+  },
+  "limitations": [
+    "Synthetic competition data; not validated for real lending.",
+    "is_default_90d means 90+ days past due during loan tenure, not default within 90 days.",
+    "All positive labels occur among applications declined by both supplied decision methods; outcome provenance requires confirmation.",
+    "Outcome maturity dates and repeated-person identifiers are unavailable.",
+    "Primary model excludes opaque unified_credit_score, assigned interest rate, IDs, segment and all historical decisions/outcomes.",
+    "Model output is a simulated risk estimate. Demo thresholds and pricing are illustrative."
+  ],
+  "eligible": 7890,
+  "excluded": {
+    "unobservable": 1943,
+    "unsupported_tenure": 167
+  }
+}

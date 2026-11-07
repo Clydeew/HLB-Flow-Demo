@@ -1,0 +1,9 @@
+{
+  "execution_environment": "Google Colab",
+  "executed_at": "2026-11-07T15:51:07.935473+00:00",
+  "python": "3.13.18",
+  "source_sha256": "07b58b578b6a0992c6098d609c75832df40d192bcf6610f605ee0f387846f601",
+  "input_csv_sha256": "0d8ec877422b58e9dd220d215f412e91a7ae510e37be2e16269d59280820698e",
+  "notebook_url": "https://colab.research.google.com/drive/1YWqQAxczriU32xeAFzmasufXOaUdrXHY",
+  "note": "Trained in Colab on CSV values matching supplied workbook; original authoritative workbook definitions retained locally. Synthetic outcomes, not validated real lending."
+}

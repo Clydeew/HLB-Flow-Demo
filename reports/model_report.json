@@ -1,0 +1,346 @@
+{
+  "partitions": {
+    "train": {
+      "raw": {
+        "n": 2583,
+        "positives": 99,
+        "prevalence": 0.03832752613240418,
+        "roc_auc": 0.8789871338180517,
+        "pr_auc": 0.2977766323723509,
+        "brier": 0.0344224171991883,
+        "log_loss": 0.13802737189255668,
+        "confusion_at_005": [
+          [
+            2013,
+            471
+          ],
+          [
+            26,
+            73
+          ]
+        ]
+      },
+      "calibrated": {
+        "n": 2583,
+        "positives": 99,
+        "prevalence": 0.03832752613240418,
+        "roc_auc": 0.8789871338180517,
+        "pr_auc": 0.2977766323723509,
+        "brier": 0.03369939223547003,
+        "log_loss": 0.13250224123521834,
+        "confusion_at_005": [
+          [
+            2020,
+            464
+          ],
+          [
+            26,
+            73
+          ]
+        ]
+      }
+    },
+    "tuning": {
+      "raw": {
+        "n": 1339,
+        "positives": 43,
+        "prevalence": 0.03211351755041075,
+        "roc_auc": 0.6336850416307781,
+        "pr_auc": 0.051042433375876606,
+        "brier": 0.031038103584236833,
+        "log_loss": 0.13974619338367614,
+        "confusion_at_005": [
+          [
+            1007,
+            289
+          ],
+          [
+            28,
+            15
+          ]
+        ]
+      },
+      "calibrated": {
+        "n": 1339,
+        "positives": 43,
+        "prevalence": 0.03211351755041075,
+        "roc_auc": 0.6336850416307781,
+        "pr_auc": 0.051042433375876606,
+        "brier": 0.03123346171236772,
+        "log_loss": 0.14063523609322082,
+        "confusion_at_005": [
+          [
+            1009,
+            287
+          ],
+          [
+            29,
+            14
+          ]
+        ]
+      }
+    },
+    "calibration": {
+      "raw": {
+        "n": 1374,
+        "positives": 50,
+        "prevalence": 0.036390101892285295,
+        "roc_auc": 0.7267824773413898,
+        "pr_auc": 0.07747588169435765,
+        "brier": 0.03439816608418134,
+        "log_loss": 0.1468965984972964,
+        "confusion_at_005": [
+          [
+            1050,
+            274
+          ],
+          [
+            22,
+            28
+          ]
+        ]
+      },
+      "calibrated": {
+        "n": 1374,
+        "positives": 50,
+        "prevalence": 0.036390101892285295,
+        "roc_auc": 0.7267824773413898,
+        "pr_auc": 0.07747588169435765,
+        "brier": 0.034431138338982745,
+        "log_loss": 0.14601952674416993,
+        "confusion_at_005": [
+          [
+            1051,
+            273
+          ],
+          [
+            22,
+            28
+          ]
+        ]
+      }
+    },
+    "test": {
+      "raw": {
+        "n": 2594,
+        "positives": 95,
+        "prevalence": 0.03662297609868928,
+        "roc_auc": 0.7238010993871232,
+        "pr_auc": 0.11766121103156325,
+        "brier": 0.03424465501634976,
+        "log_loss": 0.14593403932023893,
+        "confusion_at_005": [
+          [
+            1987,
+            512
+          ],
+          [
+            45,
+            50
+          ]
+        ]
+      },
+      "calibrated": {
+        "n": 2594,
+        "positives": 95,
+        "prevalence": 0.03662297609868928,
+        "roc_auc": 0.7238010993871232,
+        "pr_auc": 0.11766121103156325,
+        "brier": 0.03406898118784443,
+        "log_loss": 0.1445536932784614,
+        "confusion_at_005": [
+          [
+            1988,
+            511
+          ],
+          [
+            45,
+            50
+          ]
+        ]
+      }
+    }
+  },
+  "test_baselines": {
+    "constant": {
+      "n": 2594,
+      "positives": 95,
+      "prevalence": 0.03662297609868928,
+      "roc_auc": 0.5,
+      "pr_auc": 0.03662297609868928,
+      "brier": 0.03528463921118155,
+      "log_loss": 0.1570990953498281,
+      "confusion_at_005": [
+        [
+          2499,
+          0
+        ],
+        [
+          95,
+          0
+        ]
+      ]
+    },
+    "logistic": {
+      "n": 2594,
+      "positives": 95,
+      "prevalence": 0.03662297609868928,
+      "roc_auc": 0.7291800930898675,
+      "pr_auc": 0.07660219923373583,
+      "brier": 0.034568372495372646,
+      "log_loss": 0.14612310778989826,
+      "confusion_at_005": [
+        [
+          1906,
+          593
+        ],
+        [
+          42,
+          53
+        ]
+      ]
+    }
+  },
+  "test_segments": {
+    "First-time borrowers, digitally active": {
+      "n": 176,
+      "positives": 23,
+      "prevalence": 0.13068181818181818,
+      "roc_auc": 0.6902529127593066,
+      "pr_auc": 0.2547277371602925,
+      "brier": 0.1103740267224206,
+      "log_loss": 0.37219289889431645,
+      "confusion_at_005": [
+        [
+          19,
+          134
+        ],
+        [
+          1,
+          22
+        ]
+      ]
+    },
+    "Gig / platform workers": {
+      "n": 363,
+      "positives": 28,
+      "prevalence": 0.07713498622589532,
+      "roc_auc": 0.5411513859275053,
+      "pr_auc": 0.08826136406618959,
+      "brier": 0.07133913954210033,
+      "log_loss": 0.27206051154487304,
+      "confusion_at_005": [
+        [
+          39,
+          296
+        ],
+        [
+          2,
+          26
+        ]
+      ]
+    },
+    "Online merchants (MSME)": {
+      "n": 337,
+      "positives": 16,
+      "prevalence": 0.04747774480712166,
+      "roc_auc": 0.49007009345794394,
+      "pr_auc": 0.04564611485570838,
+      "brier": 0.045660098948395525,
+      "log_loss": 0.1967281868922006,
+      "confusion_at_005": [
+        [
+          299,
+          22
+        ],
+        [
+          16,
+          0
+        ]
+      ]
+    },
+    "Salaried, no credit history": {
+      "n": 566,
+      "positives": 18,
+      "prevalence": 0.03180212014134275,
+      "roc_auc": 0.43045417680454173,
+      "pr_auc": 0.04712481979619776,
+      "brier": 0.031044217243403456,
+      "log_loss": 0.14530067604783412,
+      "confusion_at_005": [
+        [
+          490,
+          58
+        ],
+        [
+          16,
+          2
+        ]
+      ]
+    },
+    "Salaried, with credit history": {
+      "n": 1152,
+      "positives": 10,
+      "prevalence": 0.008680555555555556,
+      "roc_auc": 0.47390542907180383,
+      "pr_auc": 0.009449066996290296,
+      "brier": 0.008762604634517676,
+      "log_loss": 0.05396769343957857,
+      "confusion_at_005": [
+        [
+          1141,
+          1
+        ],
+        [
+          10,
+          0
+        ]
+      ]
+    }
+  },
+  "reliability": [
+    {
+      "lower": 0,
+      "upper": 0.01,
+      "n": 2,
+      "mean_score": 0.009906476546496075,
+      "label_rate": 0.0
+    },
+    {
+      "lower": 0.01,
+      "upper": 0.05,
+      "n": 2031,
+      "mean_score": 0.024365274749339604,
+      "label_rate": 0.022156573116691284
+    },
+    {
+      "lower": 0.05,
+      "upper": 0.12,
+      "n": 500,
+      "mean_score": 0.07504841299629657,
+      "label_rate": 0.076
+    },
+    {
+      "lower": 0.12,
+      "upper": 0.3,
+      "n": 61,
+      "mean_score": 0.14444871213735827,
+      "label_rate": 0.19672131147540983
+    },
+    {
+      "lower": 0.3,
+      "upper": 1,
+      "n": 0,
+      "mean_score": null,
+      "label_rate": null
+    }
+  ],
+  "limitations": [
+    "Synthetic competition data; not validated for real lending.",
+    "is_default_90d means 90+ days past due during loan tenure, not default within 90 days.",
+    "All positive labels occur among applications declined by both supplied decision methods; outcome provenance requires confirmation.",
+    "Outcome maturity dates and repeated-person identifiers are unavailable.",
+    "Primary model excludes opaque unified_credit_score, assigned interest rate, IDs, segment and all historical decisions/outcomes.",
+    "Model output is a simulated risk estimate. Demo thresholds and pricing are illustrative."
+  ]
+}

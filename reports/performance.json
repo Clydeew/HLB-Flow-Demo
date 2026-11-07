@@ -1,0 +1,21 @@
+{
+  "environment": "Linux-7.2.11-arch1-1-x86_64-with-glibc2.44",
+  "python": "3.14.8",
+  "n": 30,
+  "population": "Identical synthetic gig persona, new VND6m/6-month mock order per request; separate disposable test database",
+  "api_round_trip": {
+    "mean_ms": 25.54250296655785,
+    "p95_ms": 41.30535799959034,
+    "max_ms": 62.79040499975963
+  },
+  "backend_decision": {
+    "mean_ms": 1.7476666666666667,
+    "p95_ms": 3.66,
+    "max_ms": 5.69
+  },
+  "outcomes": {
+    "APPROVED": 30
+  },
+  "model_version": "flow-lgbm-v1",
+  "note": "Warm local TestClient measurements include actual inference and policy; no real external provider latency, network or production cost measured."
+}

@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "HLB Flow — Checkout Credit Demo",
+  "version": "1.0.0",
+  "description": "Synthetic HLB Flow competition prototype. Financing on the local Nova merchant only.",
+  "permissions": ["activeTab", "scripting", "sidePanel", "storage"],
+  "host_permissions": ["http://127.0.0.1:8000/*"],
+  "background": {"service_worker": "background.js"},
+  "action": {"default_title": "Open HLB Flow checkout financing"},
+  "side_panel": {"default_path": "panel.html"},
+  "content_security_policy": {"extension_pages": "script-src 'self'; object-src 'none'; connect-src http://127.0.0.1:8000; style-src 'self' 'unsafe-inline'; img-src 'self' data:"}
+}
